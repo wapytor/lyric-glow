@@ -38,7 +38,9 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0
 .btn svg{width:20px;height:20px;fill:currentColor}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:56px 0 90px}
+.hero .cta{gap:8px;flex-wrap:wrap}
+.hero .cta .btn{padding:13px 15px;font-size:14.5px;white-space:nowrap}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:56px;align-items:center;padding:56px 0 90px}
 .pill{display:inline-block;padding:6px 14px;border-radius:99px;border:1px solid var(--line);background:var(--glass);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:22px}
 h1{font-size:clamp(40px,6.4vw,76px);line-height:1.02;letter-spacing:-.035em;font-weight:900}
 h1 em{font-style:normal;background:linear-gradient(90deg,var(--c1),var(--c2) 50%,var(--c3));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -88,11 +90,7 @@ td:first-child{font-weight:700}
 
 .final{text-align:center;padding:90px 0 110px}
 .final .cta{justify-content:center}
-.final .more{margin-top:22px}
-.final .more .btn{font-size:15px;padding:12px 22px;background:transparent;color:var(--mut)}
-.final .more .btn:hover{color:var(--txt);background:var(--glass)}
-.final .more .btn span{display:inline-block;transition:transform .2s}
-.final .more .btn:hover span{transform:translateX(4px)}
+.cta .btn:hover span{transform:translateX(4px)}
 footer{border-top:1px solid var(--line);padding:30px 0 44px;color:var(--mut);font-size:13.5px}
 footer .row{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
 footer a{text-decoration:none;border-bottom:1px solid var(--line)}
@@ -115,7 +113,7 @@ footer a:hover{color:var(--txt)}
   <div class="nav-links">
    <a class="hide-s" href="#features">Features</a>
    <a class="hide-s" href="#how">How it works</a>
-   <a href="https://github.com/wapytor/lyric-glow">GitHub</a>
+   <a class="hide-s" href="https://github.com/wapytor/lyric-glow">GitHub</a>
    <a class="hide-s" href="https://raptormakesstuff.duckdns.org/" target="_blank" rel="noopener">More projects</a>
    <a class="hide-s" href="https://ko-fi.com/raptormakesstuff" target="_blank" rel="noopener">☕ Donate</a>
    <a href="app.html" class="btn" style="padding:10px 18px;font-size:14px;color:var(--txt)">Open web app</a>
@@ -132,6 +130,7 @@ footer a:hover{color:var(--txt)}
      <svg viewBox="0 0 24 24"><path d="M3 5.5 10.5 4.4v7H3zM11.5 4.3 21 3v8.4h-9.5zM3 12.6h7.5v7L3 18.5zM11.5 12.6H21V21l-9.5-1.3z"/></svg>
      Download for Windows</a>
     <a class="btn" href="app.html">Open in browser</a>
+    <a class="btn" href="https://raptormakesstuff.duckdns.org/" target="_blank" rel="noopener">Check out my other projects <span aria-hidden="true" style="display:inline-block;transition:transform .2s">→</span></a>
    </div>
    <p class="fine">Windows will say "unknown publisher" because the app isn't code-signed: click <b>More info → Run anyway</b>. No install, no account needed.</p>
   </div>
@@ -199,7 +198,6 @@ footer a:hover{color:var(--txt)}
   <a class="btn primary" href="https://github.com/wapytor/lyric-glow/releases/latest/download/Lyric-Glow.exe">Download for Windows</a>
   <a class="btn" href="app.html">Open in browser</a>
  </div>
- <p class="more"><a class="btn" href="https://raptormakesstuff.duckdns.org/" target="_blank" rel="noopener">Check out my other projects <span aria-hidden="true">→</span></a></p>
 </div>
 
 <footer>
